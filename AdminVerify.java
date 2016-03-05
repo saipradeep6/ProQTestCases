@@ -69,8 +69,12 @@ public class AdminVerify {
 		              System.out.println("Body: "+str);         
 		              String result = str.substring(str.indexOf("<") + 1, str.indexOf(">"));
 		              System.out.println("result: "+ result);		              
-//		              WebDriver driver = new FirefoxDriver();
-		              System.setProperty("webdriver.chrome.driver", "D:/ProjectWork/Selenium/chromedriver.exe");
+		              // WebDriver driver = new FirefoxDriver();
+		              // For Windows
+		              //System.setProperty("webdriver.chrome.driver", "D:/ProjectWork/Selenium/chromedriver.exe");
+		             // For Mac
+		              System.setProperty("webdriver.chrome.driver", "/Users/srizzler/Documents/Selenium/chromedriver");
+		             
 		          	  WebDriver driver = new ChromeDriver();
 		              driver.manage().window().maximize();
 		              driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

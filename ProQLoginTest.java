@@ -22,7 +22,7 @@ public class ProQLoginTest {
     driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
   }
 
-  @Test(priority = 0, description="Scenario #1: Attempting Login Functionality with the invalid Password.")
+  @Test(priority = 0, description="Scenario #PQ-GN-1001: Attempting Login Functionality with the invalid Password.")
   public void Invalid_Password() throws Exception {
     driver.findElement(By.id("userEmail")).clear();
     driver.findElement(By.id("userEmail")).sendKeys("demo@proq-erp.com");
